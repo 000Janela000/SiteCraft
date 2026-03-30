@@ -89,25 +89,31 @@ export function Contact() {
                 </div>
               </a>
 
-              <div className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl">
+              <a
+                href="tel:+59965721010"
+                className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-accent/50 transition-colors group"
+              >
                 <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center shrink-0">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="font-medium">ტელეფონი</p>
-                  <p className="text-sm text-muted-foreground">მალე დაემატება</p>
+                  <p className="font-medium group-hover:text-accent transition-colors">ტელეფონი</p>
+                  <p className="text-sm text-muted-foreground">+599 65 72 10</p>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl">
+              <a
+                href="mailto:ssjanelidze@gmail.com"
+                className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-accent/50 transition-colors group"
+              >
                 <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center shrink-0">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="font-medium">ელ-ფოსტა</p>
-                  <p className="text-sm text-muted-foreground">მალე დაემატება</p>
+                  <p className="font-medium group-hover:text-accent transition-colors">ელ-ფოსტა</p>
+                  <p className="text-sm text-muted-foreground">ssjanelidze@gmail.com</p>
                 </div>
-              </div>
+              </a>
             </div>
 
             {/* Primary CTA */}
