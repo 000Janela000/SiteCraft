@@ -23,15 +23,15 @@ export function About() {
   return (
     <section id="about" className="py-20 md:py-32 bg-secondary/30">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Image Side */}
-          <div className="relative order-2 lg:order-1">
-            <div className="relative aspect-square max-w-md mx-auto lg:mx-0">
+          <div className="relative order-2 lg:order-1 flex justify-center lg:justify-start">
+            <div className="relative aspect-square w-48 md:w-56">
               {/* Decorative elements */}
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-3xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/15 to-transparent rounded-2xl" />
 
               {/* Profile Photo */}
-              <div className="absolute inset-4 bg-card border border-border rounded-2xl overflow-hidden">
+              <div className="absolute inset-2 bg-card border border-border rounded-xl overflow-hidden">
                 <img
                   src="/saba-portrait.webp"
                   alt="საბა ჯანელიძე"
@@ -40,14 +40,14 @@ export function About() {
               </div>
 
               {/* Floating card */}
-              <div className="absolute -right-4 bottom-8 bg-card border border-border rounded-xl p-4 shadow-2xl shadow-background/50">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
-                    <Code2 className="w-5 h-5 text-accent" />
+              <div className="absolute -right-3 bottom-4 bg-card border border-border rounded-lg p-3 shadow-lg shadow-background/50">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center shrink-0">
+                    <Code2 className="w-4 h-4 text-accent" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold">3+ წელი</p>
-                    <p className="text-xs text-muted-foreground">გამოცდილება</p>
+                    <p className="text-xs font-semibold">3+ წელი</p>
+                    <p className="text-[10px] text-muted-foreground">გამოცდილება</p>
                   </div>
                 </div>
               </div>
