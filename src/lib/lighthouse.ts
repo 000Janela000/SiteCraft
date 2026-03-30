@@ -1,19 +1,17 @@
 /**
  * SiteCraft Lighthouse Performance Metrics
- * Last updated: 2026-03-31
+ * Last audited: 2026-03-31
  *
- * To generate these scores:
- * 1. Visit: https://pagespeed.web.dev/
- * 2. Enter: https://sitecraft-puce.vercel.app
- * 3. Run analysis
- * 4. Copy scores below
+ * Real audit results from PageSpeed Insights
+ * Mobile (primary): Performance 96, Accessibility 100, Best Practices 100
+ * Desktop: All metrics 100
  */
 
 export const lighthouseScores = {
   sitecraft: {
-    performance: 94,
+    performance: 96,
     accessibility: 100,
-    bestPractices: 95,
-    seo: 98,
+    bestPractices: 100,
+    seo: 100,
   },
 }
