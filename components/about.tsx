@@ -81,7 +81,7 @@ export function About() {
             {/* Portfolio Link */}
             <div className="mt-6">
               <a
-                href="https://sabajanelidze.dev"
+                href="https://saba-janelidze.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium text-accent hover:text-accent/80 transition-colors"
