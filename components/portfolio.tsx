@@ -7,7 +7,7 @@ const projects = [
     category: "ვებ აპლიკაცია",
     url: "https://playtime.ge",
     features: ["ადმინ პანელი", "მომხმარებლის ავტორიზაცია", "დინამიური კონტენტი"],
-    color: "from-blue-500/20 to-purple-500/20",
+    image: "/projects/playtime.webp",
   },
   {
     title: "DevNews",
@@ -15,7 +15,7 @@ const projects = [
     category: "ბლოგ პლატფორმა",
     url: "https://dev-news-blond.vercel.app",
     features: ["სტატიების მართვა", "კატეგორიები", "SEO ოპტიმიზაცია"],
-    color: "from-emerald-500/20 to-teal-500/20",
+    image: "/projects/devnews.webp",
   },
   {
     title: "UniHub",
@@ -23,7 +23,7 @@ const projects = [
     category: "ედუკაცია",
     url: "https://unihub-edu.vercel.app",
     features: ["კურსების მართვა", "სტუდენტის პორტალი", "მასალების ატვირთვა"],
-    color: "from-orange-500/20 to-red-500/20",
+    image: "/projects/unihub.webp",
   },
 ]
 
@@ -55,29 +55,12 @@ export function Portfolio() {
               className="group relative bg-card border border-border rounded-2xl overflow-hidden hover:border-accent/50 transition-all duration-300"
             >
               {/* Project Preview */}
-              <div className={`relative aspect-[4/3] bg-gradient-to-br ${project.color}`}>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-4xl font-bold text-foreground/10 group-hover:text-foreground/20 transition-colors">
-                      {project.title.charAt(0)}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Browser mockup overlay */}
-                <div className="absolute inset-4 bg-card/90 backdrop-blur-sm rounded-lg border border-border/50 overflow-hidden">
-                  <div className="h-6 bg-secondary/50 flex items-center px-3 gap-1.5">
-                    <div className="w-2 h-2 rounded-full bg-red-500/50" />
-                    <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
-                    <div className="w-2 h-2 rounded-full bg-green-500/50" />
-                    <div className="ml-3 flex-1 h-3 bg-secondary rounded-full" />
-                  </div>
-                  <div className="p-4 space-y-2">
-                    <div className="h-3 bg-secondary/50 rounded w-3/4" />
-                    <div className="h-3 bg-secondary/50 rounded w-1/2" />
-                    <div className="h-3 bg-secondary/50 rounded w-5/6" />
-                  </div>
-                </div>
+              <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
 
                 {/* External link icon */}
                 <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
