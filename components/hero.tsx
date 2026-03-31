@@ -17,14 +17,14 @@ export function Hero() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance leading-[1.1]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-balance leading-[1.1]">
             შენი ბიზნესი
             <br />
             <span className="text-muted-foreground">იმსახურებს ვებსაიტს</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="mt-6 md:mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
+          <p className="mt-6 md:mt-8 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
             თანამედროვე და სწრაფი ვებსაიტები ქართული ბიზნესისთვის, ხელმისაწვდომ ფასად.
           </p>
 
